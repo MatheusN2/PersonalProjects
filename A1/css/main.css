@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+html,body
+{
+    height: 100%;
+    font-family: 'Montserrat', cursive;
+    background-color: white/*#ecf0f1*/;
+}
+
+.container
+{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* animations */
+@keyframes gradient
+{
+    0%{background-color: #5f9fba;}
+    25%{background-color: #42adb1;}
+    50%{background-color: #679c9a;}
+    75%{background-color: rgb(131, 157, 179);}
+    100%{background-color: #5f9fba;}
+}
+@keyframes text-changing
+{
+    0%{font-family: 'Montserrat', sans-serif;}
+    15%{font-family: 'Shadows Into Light', cursive; line-height:85px;}
+    30%{font-family: 'Tourney', cursive;line-height: initial;}
+    45%{font-family: 'Almarai', sans-serif;}
+    60%{font-family: 'Amatic SC', cursive;}
+    75%{font-family: 'Indie Flower', cursive;}
+    90%{font-family: 'Lobster', cursive;}
+    100%{font-family: 'Montserrat', sans-serif;}
+}
+@keyframes waving
+{
+    0%,100%
+    {
+     transform: translateY(0px);
+    }
+    50%
+    {
+        transform: translateY(10px);
+    }
+}
+/***/
+
+section.presenting
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #5f9fba;
+    animation-name: gradient;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.wave
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(../images/wave.png);
+    background-size: 1000px 100px;
+    animation: waving 4s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.25s);
+}
+.wave#wave1
+{
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+}
+.wave#wave2
+{
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+.wave#wave3
+{
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+.wave#wave4
+{
+    z-index: 999;
+    opacity: 0.7;
+    background-position-x: 100px;
+}
+
+.animation-text
+{
+    position: relative;
+    left: 50%;
+    top: calc(50% - 100px);
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+}
+
+.animation-text h1
+{
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #ecf0f1;
+    /* animation-name: text-changing; */
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+/***/
+
+section.main
+{
+    width: 100%;
+    height: 100%;
+    padding: 150px 2%;
+}
+
+.main .container > h2
+{
+    font-size: 3.5rem;
+    letter-spacing: 8px;
+}
+
+.animation-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    margin-top: 150px;
+}
+
+.animation-box
+{
+    align-items: center;
+    position: relative;
+    width: 75%;
+    height: auto;
+}
+
+.buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 45px;
+    padding: 0 30px;
+    text-align: left;
+}
+.btn-act
+{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.play
+{
+    z-index: 99;
+    background-color: #dcdde1;
+}
+.pause
+{   
+    z-index: 98;
+    position: absolute;
+    left: 30px;
+    background-color: #3a4b49;
+}
+.info
+{
+    position: absolute;
+    right: 30px;
+    background-color: #476969;
+}
+#info1,#info2,#info3
+{
+    z-index: 99;
+}
+
+.infoOut
+{
+    z-index: 98;
+}
+
+.animation
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+.animation video
+{
+    width: 100%;
+    height: 100%;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.animation-box .video-shadow
+{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 99%;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 10px;
+}
+.shadow-text
+{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+.video-shadow h4
+{
+    font-size: 1.5rem;
+    color: #d35400;
+    margin-bottom: 50px;
+}
+.video-shadow p
+{
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #e67e22;
+}
+
+.animation-details
+{
+    height: auto;
+    text-align: center;
+    margin-left: 50px;
+}
+.animation-details p
+{
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 2.5px;
+}
+
+.anime1
+{
+    margin-top: 100px;
+}
+.anime2
+{
+    flex-direction: row-reverse;
+}
+.anime2 .animation-box
+{
+    margin-left: 70px;
+}
+.anime2 .animation-details
+{
+    margin-left: 0;
+}

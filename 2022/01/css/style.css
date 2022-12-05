@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    height: 100%;
+    font-family: Graphik Web,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+}
+
+.container
+{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.help_button
+{
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(36, 28, 21);
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* HEADER */
+
+body > header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 2%;
+    background-color: #c5dbf2;
+}
+
+section.nav
+{
+    width: 35%;
+}
+section.nav nav ul
+{
+    display: flex;
+    list-style: none;
+}
+section.nav ul a
+{
+    margin: 0 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #007c89;
+}
+
+section.logo
+{
+    width: 30%;
+}
+section.logo .logo-img
+{
+    width: 150px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(156, 156, 156);
+}
+
+section.ajuda
+{
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+section.ajuda div
+{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+section.ajuda .tel
+{
+    display: flex;
+    align-items: center;
+    color: #007c89;
+}
+
+section.ajuda button
+{
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 0;
+}
+section.ajuda button.connect
+{
+    margin: 0 10px;
+    border: solid 1px black;
+    background-color: transparent;
+    font-weight: bold;
+    color: #007c89;
+}
+section.ajuda button.sign-in
+{
+    margin-left: 10px;
+    border: none;
+    background-color: #007c89;
+    color: white;
+    font-weight: bold;
+}
+
+/* *** */
+
+/* MAIN */
+main
+{
+    height: 100%;
+}
+
+/* Part 01 */
+.part01
+{
+    height: 88%;
+    padding: 100px 2%;
+    background-color: #c5dbf2;
+}
+.part01 > .container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.part01 .left_part01
+{
+    width: 50%;
+}
+.part01 .left_part01 h6
+{
+    font-family: Means Web,Georgia,Times,Times New Roman,serif;
+    font-size: 14px;
+}
+.part01 .left_part01 h2
+{
+    font-family: Means Web,Georgia,Times,Times New Roman,serif;
+    margin: 30px 0;
+    font-size: 45px;
+    line-height: 60px;
+}
+.part01 .left_part01 p
+{
+    font-family: Means Web,Georgia,Times,Times New Roman,serif;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.part01 .left_part01 button
+{
+    width: 200px;
+    height: 60px;
+    margin-top: 30px;
+    border: none;
+    background-color: #007c89;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.part01 .right_part01
+{
+    width: 50%;
+}
+.part01 .right_part01 img
+{
+    width: 500px;
+}

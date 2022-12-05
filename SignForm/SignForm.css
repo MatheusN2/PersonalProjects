@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;}
+
+body{
+    background-color: rgb(92, 135, 192);}
+
+section{
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 100px 5px 35px 5px;
+    background-image: url("../../Classes/Imagens/bg.png");
+    text-align: center;
+}
+
+section h2{
+    margin-bottom: 50px;
+    font-size: 45px;
+    font-family: Kaushan Script;
+    color: white;
+}
+
+.info input{
+    width: 90%;
+    height: 45px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+    text-align: center;
+}
+
+.footer input{
+    width: 85%;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    background-color: rgb(92,135,192);
+    color: white;
+    cursor: pointer;
+}
+
+.footer input:hover{
+    width: 80%;
+    height: 47px;
+    transition: 0.7s;
+}
+
+.blind{
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.footer a{
+    width: 90%;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .blind:hover{
+    width: 90%;
+    background-color: rgba(0,0,0,0.4);
+    transition: 0.8s;
+}

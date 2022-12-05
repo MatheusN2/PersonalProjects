@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>A1 Project</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Amatic+SC&family=Indie+Flower&family=Lobster&family=Montserrat:wght@300&family=Shadows+Into+Light&family=Tourney:wght@300&display=swap');
+    </style>
+    <!-- 'Almarai', sans-serif
+         'Amatic SC', cursive
+         'Indie Flower', cursive
+         'Lobster', cursive
+         'Montserrat', sans-serif
+         'Shadows Into Light', cursive
+         'Tourney', cursive -->
+     
+</head>
+<body>
+    
+<section class="presenting">
+
+    <div class="animation-text">
+            <h1>Animation</h1>
+    </div><!--animation-text-->
+    
+    <div class="wave" id="wave1" style="--i:1;"></div>
+    <div class="wave" id="wave2" style="--i:2;"></div>
+    <div class="wave" id="wave3" style="--i:3;"></div>
+    <div class="wave" id="wave4" style="--i:4;"></div>
+</section><!--presenting-->
+
+<section class="main">
+    <div class="container">
+    <h2>Showcase</h2>
+
+        <div class="animation-container anime1">
+            <div class="animation-box">
+
+                <div class="buttons">
+                    <div class="play btn-act" id="play1"></div>
+                    <div class="pause btn-act" id="pause1"></div>
+                    <div class="info btn-act" id="info1"></div>
+                    <div class="info infoOut btn-act" id="infoOut1"></div>
+                </div><!--buttons-->
+
+                <div class="animation">
+                    <video id="v1" loop>
+                        <source src="animation/Bouncing Ball/Basic Bouncing Ball/Bouncing Ball.mp4" type="video/mp4"/>
+                    </video>
+
+                    <div class="video-shadow shadow1">
+                        <div class="shadow-text">
+                            <h4>#1 <br>Basic Bouncing Ball</h4>
+                            <p>A <i>RAG</i>  Animation</p>
+                            <p>Created by RgnrkMath</p>
+                        </div><!--shadow-text-->
+                    </div><!--video-shadow #shadow-->
+                </div><!--animation-->
+
+            </div><!--animation-box-->
+
+            <div class="animation-details">
+                <p>A simple animation. Doing it we can start learning about the basic of fisics and logic in animations.</p>
+            </div><!--animation-details-->
+        </div><!--animation-container-->
+
+
+        <div class="animation-container anime2">
+            <div class="animation-box">
+
+                <div class="buttons">
+                    <div class="play btn-act" id="play2"></div>
+                    <div class="pause btn-act" id="pause2"></div>
+                    <div class="info btn-act" id="info2"></div>
+                    <div class="info btn-act" id="infoOut2"></div>
+                </div><!--buttons-->
+
+                <div class="animation">
+                    <video id="v2" loop>
+                        <source src="animation/Bouncing Ball/Quicking Bouncing Balls/Quicking Bouncing Ball.mp4" type="video/mp4"/>
+                    </video>
+
+                    <div class="video-shadow shadow2">
+                        <div class="shadow-text">
+                            <h4>#2<br> Weighty Ball</h4>
+                            <p>A <i>Parts</i> Animation</p>
+                            <p>Created by RgnrkMath</p>
+                        </div><!--shadow-text-->
+                    </div><!--video-shadow #shadow-->
+                </div><!--animation-->
+
+            </div><!--animation-box-->
+
+            <div class="animation-details">
+                <p>My second exercise helped me to understand a way to make the path of an object. Besides that, I also could get a better knowledge about interaction between objects.</p>
+            </div><!--animation-details-->
+        </div><!--animation-container-->
+
+
+        <div class="animation-container anime3">
+            <div class="animation-box">
+
+                <div class="buttons">
+                    <div class="play btn-act" id="play3"></div>
+                    <div class="pause btn-act" id="pause3"></div>
+                    <div class="info btn-act" id="info3"></div>
+                    <div class="info btn-act" id="infoOut3"></div>
+                </div><!--buttons-->
+
+                <div class="animation">
+                    <video id="v3" loop>
+                        <source src="animation/Bouncing Ball/Tail Bouncing Ball/Tail Bouncing Ball.mp4" type="video/mp4"/>
+                    </video>
+
+                    <div class="video-shadow shadow3">
+                        <div class="shadow-text">
+                            <h4>#3 <br>Tail Ball</h4>
+                            <p>A <i>Parts</i> Animation</p>
+                            <p>Created by RgnrkMath</p>
+                        </div><!--shadow-text-->
+                    </div><!--video-shadow #shadow-->
+                </div><!--animation-->
+
+            </div><!--animation-box-->
+
+            <div class="animation-details">
+                <p>NOT FINISHED.
+                <br>An animation of a bouncing ball with a tail, this exercise helps learning about action and reaction and how to make things seems more natural.
+                </p>
+            </div><!--animation-details-->
+        </div><!--animation-container-->
+
+        
+
+    </div><!--container-->
+</section><!--main-->
+
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script>
+    let wave1 = document.getElementById('wave1');
+    let wave2 = document.getElementById('wave2');
+    let wave3 = document.getElementById('wave3');
+    let wave4 = document.getElementById('wave4');
+
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+
+        wave1.style.backgroundPositionX = 400 + value * 3 + 'px';
+        wave2.style.backgroundPositionX = 300 + value * -3 + 'px';
+        wave3.style.backgroundPositionX = 200 + value * 2 + 'px';
+        wave4.style.backgroundPositionX = 100 + value * -2 + 'px';
+    })
+</script>
+
+</body>
+</html>

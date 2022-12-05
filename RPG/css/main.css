@@ -1,0 +1,1000 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;}
+
+	@font-face{
+	font-family: calisto mt;
+	src:url('../../../fonts/calisto/Calistoga-Regular.ttf');}
+	@font-face{
+	font-family: acme;
+	src:url('../../../fonts/Acme/Acme-Regular.ttf');}
+	@font-face{
+	font-family: fira sans;
+	src:url('../../../fonts/Fira Sans/FiraSans-Thin.ttf');}
+@font-face{
+	font-family: merri weather;
+	src:url('../../../fonts/Merriweather/Merriweather-Regular.ttf');}
+@font-face{
+	font-family: playfair;
+	src:url('../../../fonts/Playfair/PlayfairDisplay-Regular.ttf');}
+@font-face{
+	font-family: philosopher;
+	src:url('../../../fonts/Philosopher/Philosopher-Regular.ttf');}
+
+@keyframes send_animation{
+	50%{width: 140px;
+		height: 80px;
+		font-size: 31px;
+		position: fixed;
+		bottom: 35px;
+		right: 35px;}}
+
+html body{
+	width: 100%;
+	max-width: 1920px;
+	height: 100%;
+	/*background: linear-gradient(to top left,	rgb(62, 78, 79),rgb(25,25,25));*/
+	background-image: url("../../Imagens/Background/Background.jpg");
+	background-repeat: no-repeat;
+	background-size: 1920px;
+	background-attachment: fixed;}
+
+.send input:hover{
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	cursor: pointer;
+	background-color: rgb(10,10,10);
+	color: #5ec7d1;
+	animation-name:send_animation;
+	animation-duration: 0.25s;}
+.send input{
+	font-family: calisto mt;
+	font-size: 30px;
+	width: 130px;
+	height: 70px;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	outline: none;
+	border:none;
+	border-radius: 7px;
+	background-color: #5ec7d1;
+	color: rgb(10,10,10);
+	transition: 0.25s;}
+
+.clear{clear: both;}
+
+.center{
+	width: 1280px;
+	margin: 0 auto;}
+
+.center1{
+	width: 1720px;
+	margin: 0 auto;}
+
+/*Desktop*/
+header{
+	width: 100%;
+	min-height: 150px;
+	height: auto;
+	padding: 1% 0;
+	background-color: rgb(15,15,15);}
+
+#home,#fichatecnica,#skills, .menu{
+	/*transform: translate(-200%,0%);
+	float: left;*/
+	margin: 1.5%;
+	list-style: none;
+	text-align: center;
+	/*position: relative;
+	left: 50%;*/}
+
+#home a:hover,#fichatecnica a:hover,#skills a:hover,.menu a:hover{
+	width: 100%;
+	background-color: #5ec7d1;
+	color: rgb(25,25,25);
+	text-align: center;
+	/*font-size: 41px;*/
+	/*margin: 0px 9px;*/
+	border-radius: 7px;
+	/*padding: 4px;*/
+	/*transition: 0.2s;*/}
+	
+#home a,#fichatecnica a,#skills a,.menu a{
+	font-size: 40px;
+	margin-left: 20px;	
+	font-family: calisto mt;
+	text-decoration: none;
+	color:#5ec7d1;
+	border-bottom: 4px solid;}
+
+.content{font-family: philosopher; position: relative;}
+
+/*Ficha*/
+.informations input[type=text]:focus,.informations input[type=number]:focus,.informations input[type=date]:focus, #ec:focus{
+	background-color: rgba(10,10,10,0.9);}
+
+/*Informações*/
+.informations{
+	width: 1080px;
+	height: 240px;
+	float: left;
+	transform: translate(-50%,0%);
+	position: relative;
+	left: 50%;
+	border: 7px solid #000;
+	margin: 30px 0px 50px 0px;
+	background-color: rgb(60,60,60);
+	padding: 20px;
+	background-size: contain;
+	position: relative;}
+
+.informations label{
+	font-weight: bold;
+	font-size: 22px;
+	color: #000;
+	margin: 10px 0;}
+
+.informations input[type=text],.informations input[type=number],.informations input[type=date],.informations input[type=radio]{
+	font-size: 16px;
+	border-radius: 7px;
+	outline: none;
+	border: none;
+	text-align: center;
+	background-color: rgba(10,10,10,0.5);
+	color: rgb(115,115,115);
+	margin: 6px 5px;
+	padding: 5px;}
+
+.informations input[type=text]{
+	width: 40%;
+	height: 35px;}
+.informations input[type=number]{
+	width: 6%;
+	height: 35px;}
+.informations input[type=date]{
+	width: 13%;
+	height: 35px;}
+
+.informations #peso, #altura, #born{
+	position: relative;
+	left: 50%;
+	bottom: 140px;}
+.informations #pesol, #altural, #bornl{
+	position: relative;
+	left: 50%;
+	bottom: 140px;}
+
+/* .informations #nome{} */
+.informations #ocupation{
+	width: calc(40% - 38.5px);}
+.informations #country{
+	width: calc(40% - 84.5px);}
+
+#sexol{
+	float: left;
+	position: relative;
+	top: -140px;
+	margin-left: 10%;}
+.informations .sexo{
+	position: relative;
+	top: -140px;
+	float: left;
+	border-radius: 7px;
+	margin: 13px 13px;
+	width: 350px;
+	height: 23px;
+	background-color: rgba(10,10,10,0.5);}
+.informations .sexo label{
+	font-weight: normal;
+	color: rgb(115,115,115);
+	margin-right: 10px;}
+
+.informations #ec, #ecl{
+ 	position: absolute;
+ 	left: 58%;
+ 	top: 163px;}
+.informations select{
+	margin: 8.5px 135px;
+	height: 28px;
+	font-family: philosopher;
+	color: rgb(115,115,115);
+	text-align: center;
+	font-size: 16px;
+	outline: none;
+	border:none;
+	border-radius: 7px;
+	background-color: rgba(30,30,30,1);}
+
+.informations input[type=date],[type=radio],select{
+	cursor: pointer;}
+.informations .sexo label{
+	cursor: pointer;}
+/*Informações*/
+
+/*Aparência*/
+.fisicalloking{
+	width: 630px;
+	height: 1050px;
+	background-color: rgb(60,60,60);
+	border: 7px solid #000;
+	float: left;
+	padding: 20px;
+	margin-right:100px;}
+
+.fisicalloking h1{
+	float: left;
+	transform: translate(-50%,0%);
+	position: relative;
+	left:50%;
+	margin-bottom: -80px;
+	color: rgb(36, 25, 41);
+	border-bottom: 3px solid;}
+
+.fisicalloking h2{
+	font-size: 25px;
+	margin-left: 30px;
+	margin-bottom: 15px;
+	margin-top: 70px;}
+
+.fisicalloking li{
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+	margin-left: 20px;
+	position: relative;
+	top: 23px;}
+
+.fisicalloking textarea{
+	min-width: 450px;
+	max-width: 400px;
+	min-height: 70px;
+	max-height: 70px;
+	margin-bottom: 10px;
+	float: right;
+	text-align: center;
+	padding: 10px;
+	outline: none;
+	border:none;
+	border-radius: 7px;
+	background-color: rgba(10,10,10,0.5);
+	font-size: 16px;
+	color: rgb(115,115,115);}
+
+.fisicalloking .body textarea{
+	min-width: 375px;
+	max-width: 375px;}
+
+.fisicalloking textarea:focus{
+	background-color: rgba(10,10,10,0.9);}
+/*Aparência*/
+
+/*Roupas*/
+.clothes{
+	float: left;
+	width: 550px;
+	height: 950px;
+	padding: 20px;
+	border: 7px solid #000; 
+	background-color: rgb(60,60,60);
+	padding: 20px;
+	margin-bottom: 150px;
+	position: relative;
+	top: 50px;}
+
+.clothes h1{
+	float: left;
+	transform: translate(-50%,0%);
+	position: relative;
+	left: 50%;
+	margin-bottom: 30px;	
+	color: rgb(36, 25, 41);
+	border-bottom: 3px solid;}
+
+.clothes li{
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	top: 30px;
+	margin-left: 20px;}
+
+.clothes textarea{
+	float: right;
+	min-width: 330px;
+	max-width: 330px;
+	min-height: 70px;
+	max-height: 70px;
+	margin-top: 10px;
+	background-color: rgba(10,10,10,0.5);
+	color: rgb(115,115,115);
+	border: none;
+	outline: none;
+	border-radius: 7px;
+	text-align: center;
+	padding: 5px;}
+.clothes textarea:focus{
+	background-color: rgba(10,10,10,0.9);}
+
+/*Roupas*/
+
+/*Relações*/
+
+.relationship{
+	float: left;
+	width: 500px;
+	height: 700px;
+	background-color: rgb(60,60,60);
+	border: 7px solid #000;
+	padding: 20px;
+	margin-left: 50px;}
+
+.relationship h1{
+	float: left;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%,0%);
+	color: rgb(36,25,41);
+	border-bottom: 3px solid;
+	margin-bottom: 30px;}
+
+.relationship .pai li{
+	float: left;
+	margin:0px 20px;}
+.relationship li{
+	float: left;
+	margin: 40px 0px 0px 20px}
+
+.relationship span{
+	font-size: 25px;
+	font-weight: bold;
+	margin-right: 15px;}
+
+.relationship label{
+	font-size: 20px;}
+.relationship label:hover{
+	cursor: pointer;}
+
+.relationship [type=radio]{
+	margin-left: 15px;}
+
+.relationship [type=text]{
+	float: right;
+	margin-top: 10px;
+	width: 400px;
+	height: 30px;
+	outline: none;
+	border: none;
+	border-radius: 7px;
+	text-align: center;
+	padding: 10px;
+	background-color: rgba(10,10,10,0.5);
+	color: rgb(115,115,115);}
+
+
+
+/*Relações*/
+
+/*Personalidade*/
+
+.personality {
+	float: left;
+	width: 42	0px;
+	height: 600px;
+	padding: 20px;
+	background-color: rgb(60,60,60);
+	border: 7px solid #000;
+	margin: 0px 50px 0px 100px;}
+
+.personality h1{
+	float: left;
+	transform: translate(-50%,0%);
+	position: relative;
+	left: 50%;
+	margin-bottom: 15px;
+	color: rgb(35,25,41);
+	border-bottom: 3px solid;}
+
+.personality li{
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	top: 17px;
+	margin-left: 20px;}
+
+.personality textarea{
+	float: right;
+	min-width: 340px; 
+	max-width: 340px;
+	min-height: 40px;
+	max-height: 40px;
+	margin-top: 10px;
+	padding: 5px;
+	text-align: center;
+	border: none;
+	border-radius: 7px;
+	outline: none;
+	background-color: rgba(10,10,10,0.5);
+	color: rgb(115,115,115);}
+.personality textarea:focus{
+	background-color: rgba(10,10,10,0.9);}
+
+/*Personalidade*/
+
+/*Pessoal*/
+
+.personal{
+	float: left;
+	width: 500px;
+	height: 480px;
+	padding: 20px;
+	border: 7px solid #000;
+	background-color: rgb(60,60,60);
+	margin-left: 50px;}
+
+.personal h1{
+	float: left;
+	transform: translate(-50%,0%);
+	position: relative;
+	left: 50%;
+	margin-bottom: 15px;
+	color: rgb(35,25,41);
+	border-bottom: 3px solid;}
+
+.personal li{
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	top: 22px;
+	margin-left: 20px;}
+
+.personal textarea{
+	float: right;
+	min-width: 420px;
+	max-width: 420px;
+	min-height: 50px;
+	max-height: 50px;
+	margin-top: 10px;
+	padding: 10px;
+	border: none;
+	border-radius: 7px;
+	outline: none;
+	text-align: center;
+	background-color: rgba(10,10,10,0.5);
+	color: rgb(115,115,115);}
+.personal textarea:focus{
+	background-color: rgba(10,10,10,0.9);}
+/*Pessoal*/
+
+/*História*/
+.history {
+	margin: 50px 0px;
+	width: 80%;
+	height: 500px;
+	padding: 20px;
+	float: left;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	background-color: rgb(60,60,60);
+	border: 7px solid #000;}
+
+.history h1{
+	color: rgb(35,25,41);
+	border-bottom: 3px solid;
+	float: left;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	margin-bottom: 30px;}
+
+.history textarea{
+	min-width: 1280px;
+	max-width: 1280px;
+	min-height: 350px;
+	max-height: 350px;
+	float: left;
+	padding: 20px;
+	text-align: center;
+	border: none;
+	border-radius: 7px;
+	outline: none;
+	background-color: rgba(10,10,10,0.5);
+	color: rgb(115,115,115);}
+.history textarea:focus{
+	background-color: rgba(10,10,10,0.9);}
+/*História*/
+
+/*celular*/
+@media screen and (max-width: 700px){
+
+.send input{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 100px;
+	height: 50px;
+	font-size: 27.5px;}
+.send input:hover{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;}
+
+/*informações*/
+	.informations {
+		width: 500px !important;
+		position: relative;}
+	
+	.informations [type=text]{
+		width: 350px !important;}
+	.informations #ocupation{
+		max-width: 311px !important;}
+	.informations #country{
+		max-width: 264px;}
+	
+	.informations .part2 #peso,.informations .part2 #pesol{
+		position: relative;
+		left: 3% !important;}
+	.informations .part2 #altura,.informations .part2 #altural{
+		position: relative;
+		left: 17% !important;}
+	.informations .part2 #born,.informations .part2 #bornl{
+		position: relative;
+		left: 1.3% !important;}
+	.informations .part3 #sexol, .informations .part3 .sexo{
+		position: relative;
+		left: -8.8% !important;}
+	.informations .part3 #ec, .informations .part3 #ecl{
+		position: relative;
+		left: 7.5% !important;
+		margin-left: 5px !important;}
+/*informações*/
+
+/*aparencia*/
+
+	.fisicalloking{
+		position: relative;
+		left: 2.5px;
+		width: 500px;}
+
+	.fisicalloking textarea{
+		min-width: 350px;
+		max-width: 350px;}
+	.fisicalloking .body textarea{
+		min-width: 275px;
+		max-width: 275px;}
+
+	.clothes {
+		width: 98.5%;
+		margin-left: 3px;
+		margin-top: 40px;}
+	.clothes textarea{
+		min-width: 280px;
+		max-width: 280px;
+	}
+
+/*aparencia*/
+	}
+
+/*Notebook*/
+@media screen and (max-width: 1280px){
+		body{max-width: 1280px !important; width: 100%;}
+	header {min-height: 110px !important;}
+	header a{
+		position: relative;
+		left: -400px !important;}
+
+	.informations {
+		width: 700px;
+		height: 380px;
+		position: relative;}
+
+	.informations label{
+		margin-left: 1%;}
+
+	.informations #pesol,#peso,#altural,#altura,#bornl,#born{
+		position: relative;
+		left: 10% !important;
+		bottom: 0px !important;}
+
+	.informations #altura,#altural{
+		position: relative;
+		left: 350px !important;
+		bottom: 47px !important;}
+
+	.informations #bornl, #born{
+		position: relative;
+		bottom: 47px !important;}
+
+	.informations .sexo, #sexol, #ecl, #ec{
+		position: relative !important;
+		left: 0px !important;
+		top: -47px !important;}
+
+	.informations .sexo{
+		width: 350px;}
+	.informations .sexo label{
+		margin-left: 0px;}
+
+	.informations #ecl{
+		position: relative;
+		left: 175px !important;}
+	.informations #ec{
+		position: relative;
+		left: 45px !important;
+	}}
+
+/*responsivo test1*/
+
+/*Ficha*/
+
+
+/*Skills*/
+
+/*essenciais*/
+main .essentials{
+	margin-top: 50px;}
+
+main .essentials img{
+	float: left;}
+
+main .essentials .life img{
+	width: 50px;
+	height: 50px;}
+
+main .essentials .sanity img{
+	width: 53px;
+	height: 74px;}
+
+main .essentials .luck img{
+	width: 48px;
+	height: 69px;}
+
+main .essentials .iniciative img{
+	float: right;
+	position: relative;
+	top: -210px;
+	right: 400px;
+	width: 69px;
+	height: 68px;}
+
+main .essentials .moving img{
+	float: right;
+	position: relative;
+	right: 350px;
+	top: -210px;
+	width: 87px;
+	height: 60px;}
+
+main .essentials .resistence img{
+	float: right;
+	position: relative;
+	top: -210px;
+	right: 350px;
+	width: 54px;
+	height: 80px;}
+
+
+.essentials label{
+	font-size: 40px;
+ 	text-shadow: -2px 0 black, 0 1.4px black, 2px 0 black, 0 -1.4px black;
+ 	float: left;}
+
+ .essentials .life label{
+ 	color: #e60000;
+ 	margin: 0px 0px 0px 10px;}
+ 
+ .essentials .sanity label{
+ 	color: #8fd5cd;
+ 	margin: 10px 0px 0px 5px;}
+
+ .essentials .luck label{
+ 	color: #00ff00;
+ 	margin: 5px 0px 0px 10px;}
+
+ .essentials .iniciative label{
+ 	float: right;
+ 	position: relative;
+ 	top: -210px;
+ 	right: 400px;
+ 	color: #ed3a19;
+ 	margin: 20px 0px 0px 10px;}
+
+.essentials .moving label{
+	float: right;
+	position: relative;
+	top: -210px;
+	right: 365px;
+	color: #d5e7f1;
+	margin: 20px 0px 0px 10px;}
+
+.essentials .resistence label{
+	float: right;
+	position: relative;
+	top: -210px;
+	right: 350px;
+	color: #d16a62;}
+/*essenciais*/
+
+
+/*atributos*/
+
+main .mainatributes{
+	float: left;
+	margin: 10px 50px 0px 0px;}
+
+main .mainatributes p{
+	float: left;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	font-size: 27px;
+	color: rgb(134, 80, 199);
+	border-bottom: 3px solid;
+	font-weight: bold;}
+
+main .mainatributes input[type=number]{
+	float: left;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	width: 50px;
+	padding: 3px;
+	margin-top: 10px;
+	margin-bottom: 100px;
+	background-color: rgba(134,80,199,0.1);
+	text-align: center;
+	color: rgb(134,80,199);
+	font-size: 20px;
+	border: none;
+	border-radius: 7px;
+	outline: none;}
+
+
+main .mainatributes .atk{
+	width: 100px;
+	height: 110px;
+	padding: 10px;
+	border: 4px solid #000;
+	border-radius: 7px;
+	background-color: rgba(20,20,20,0.8);}
+
+main .mainatributes .des{
+	margin-left: -15px;
+	width: 100px;
+	height: 110px;
+	padding: 10px;
+	border: 4px solid #000;
+	border-radius: 7px;
+	background-color: rgba(20,20,20,0.8);}
+
+main .mainatributes .perc{
+	margin-left: -15px;
+	width: 100px;
+	height: 110px;
+	padding: 10px;
+	border: 4px solid #000;
+	border-radius: 7px;
+	background-color: rgba(20,20,20,0.8);}
+
+main .mainatributes .caris{
+	margin-left: -15px;
+	width: 100px;
+	height: 110px;
+	padding: 10px;
+	border: 4px solid #000;
+	border-radius: 7px;
+	background-color: rgba(20,20,20,0.8);}
+
+main .mainatributes .esp{
+	margin-left: -15px;
+	width: 100px;
+	height: 110px;
+	padding: 10px;
+	border: 4px solid #000;
+	border-radius: 7px;
+	background-color: rgba(20,20,20,0.8);}
+
+main .mainatributes .int{
+	margin-left: -15px;
+	width: 100px;
+	height: 110px;
+	padding: 10px;
+	border: 4px solid #000;
+	border-radius: 7px;
+	background-color: rgba(20,20,20,0.8);} 
+
+
+main .atributes{
+	width: 324px;
+	padding: 20px;
+	float: left;
+	margin-left: 50px;
+	border: 5px solid #000;
+	border-radius: 7px;
+	background-color: rgba(61, 135, 120,0.5);}
+
+main .atributes p{
+	float: left;
+	font-size: 20px;
+	color: rgb(0,0,0);}
+
+main .atributes input[type=number]{
+	width: 50px;
+	padding: 3px;
+	margin-bottom: 5px;
+	float: right;
+	background-color: rgba(0,0,0,0.5);
+	color: rgb(0,0,0);
+	font-size: 18px;
+	text-align: center;
+	border: none;
+	border-radius: 7px;
+	outline: none;}
+
+
+main .atributes input[type=number]:focus{
+	background-color: rgba(0,0,0,0.8);}
+main .mainatributes input[type=number]:focus{
+	background-color: rgba(134,80,199,0.3);}
+/*atributos*/
+
+
+/*Pericias*/
+
+main .pericias{
+	width: 300px;
+	height: 380px;
+	padding: 20px;
+	float: left;
+	position: relative;
+	/* top:; */
+	margin-top: -910px;
+	left: 210px; 
+	background-color: rgba(61,135,120,0.5);
+	border: 5px solid #000;
+	border-radius: 7px;}
+
+main .pericias h1{
+	float: left;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%,0%);
+	margin-bottom: 15px;
+	border-bottom: 3px solid;
+	color: rgb(10,10,10);}
+
+main .pericias p{
+	float: left;
+	font-size: 20px;
+	color: #000;}
+
+main .pericias input[type=number]{
+	width: 50px;
+	padding: 3px;
+	float: right;
+	position: relative;
+	top: -22px;
+	background-color: rgba(0,0,0,0.5);
+	color: rgb(0,0,0);
+	font-size: 18px;
+	text-align: center;
+	border: none;
+	border-radius: 7px;
+	outline: none;}
+main .pericias input[type=number]:focus{
+	background-color: rgba(0,0,0,0.8);}	
+
+/*Pericias*/
+
+
+/*Itens*/
+
+main .maos{
+	float: right;}
+
+main .maos img{
+	float: right;
+	position: absolute;
+	right: 270px;
+	top: 730px;
+	opacity: 0.9;}
+
+main .maos #maos{
+	float: right;
+	position: relative;
+	right: 0px;
+	top: 50px;}
+
+main .maos input[type=text]{
+	width: 200px;
+	height: 30px;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 20px;
+	border: 2px solid #6f3524;
+	outline: none;
+	background-color: rgba(229,180,161,0.7);
+	color: #000;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;}
+
+main .maos input[type=text]:focus{
+	background-color: rgba(229,180,161,0.9);}
+
+
+
+main .bolsos img{
+	width: 300px;
+	position: relative;
+	top: -820px;
+	right: 40px;
+	float: right;
+	opacity: 0.9;
+	margin: 0px 0px;}
+
+main .bolsos input{
+	float: right;
+	position: relative;
+	top: -1085px;
+	right: 75px;
+	width: 230px;
+	height: 30px;
+	padding: 5px;
+	margin-bottom: 10px;
+	border-radius: 50px;
+	border: none;
+	outline: none;
+	background-color: rgba(225,225,225,0.4);
+	color: rgb(111,111,111);
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;}
+main .bolsos input:focus{
+	background-color: rgba(255,255,255,0.4);}
+
+
+main .bag{
+	float: right;
+	position: relative;
+	top: -1000px;}
+
+main .bag img{
+	float: right;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	opacity: 0.9;}
+
+main .bag textarea{
+	float: right;
+	position: absolute;
+	right: 0px;
+	top: 130px;
+	min-width: 225px;
+	max-width: 225px;
+	min-height: 300px;
+	max-height: 300px;
+	padding: 10px;
+	margin-right: 80px;
+	border-radius: 50px;
+	border: none;
+	outline: none;
+	text-align: center;
+	background-color: rgba(233,160,91,0.5);
+	font-size: 18px;
+	color: rgb(255, 216, 177);
+	font-weight: bold;}
+main .bag textarea:focus{
+	background-color: rgba(181, 126, 74,0.5);}
+
+/*Itens*/
+
+/* footer {} */
+
+/* Skills */

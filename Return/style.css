@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    background: linear-gradient(67.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+.size
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear
+{
+    clear: both;
+}
+
+
+header
+{
+    width: 100%;
+    padding: 15px 20px;
+}
+
+header .size
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav
+{
+    list-style: none;
+}
+
+header nav a
+{
+    float: left;
+    font-size: 20px;
+    color: #FFF2E7;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+
+main
+{
+    padding: 2%;
+    border-top: 0.1px solid #FFF2E7;
+}
+
+main .part1
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+main .part1 .text
+{
+    width: 70%;
+}
+
+main .part1 .text h1
+{
+    font-size: 64px;
+    font-weight: 400;
+    color: #FFF2E7;
+}
+
+main .part1 .text h2
+{
+    margin-top: 40px;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+
+main .part1 .text button
+{
+    width: 185px;
+    height: 67px;
+    background: #ECD6C4;
+    box-shadow: 4px 5px 4px rgba(0,0,0,0.25);
+    border: none;
+    border-radius: 20px;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+main .part2
+{
+    text-align: center;
+    padding: 60px 0;
+}
+
+main .part2 .diviser
+{
+    width: 240px;
+    margin: 0 auto;
+    border-top: 0.1px solid #FFF2E7;
+}
+
+main .part2 h2
+{
+    margin: 70px 0px 50px 0px;
+    font-size: 24px;
+    color: #FFF2E7;
+}
+
+main .part2 p
+{
+    margin-top: 30px;
+    font-size: 20px;
+    color: #ECD6C4;
+}
+
+
+
+footer
+{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 0.1px solid #FFF2E7;
+}
+
+footer img
+{
+    margin-top: 0px;
+}
